@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>parking_lot</RootNamespace>
+    <RootNamespace>ParkingLot</RootNamespace>
     <UserSecretsId>0b7219a4-e6db-4f7f-88f9-0b4b0c7c8b7e</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
