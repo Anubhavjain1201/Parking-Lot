@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ParkingLot.Models.InputDTOs;
 
 namespace ParkingLot.Controllers
 {
@@ -12,5 +13,19 @@ namespace ParkingLot.Controllers
         {
             _logger = logger;
         }
+
+        [HttpPost("issueTicket")]
+        public async Task<IActionResult> IssueTicket([FromBody] IssueTicketInputDTO issueTicketInputDto)
+        {
+            return Ok(issueTicketInputDto);
+        }
+
+        [HttpPost("calculateFare")]
+        public async Task<IActionResult> CalculateFare([FromBody] CalculateFareInputDTO calculateFareInputDto)
+        {
+            return Ok(calculateFareInputDto);
+        }
+
+
     }
 }
