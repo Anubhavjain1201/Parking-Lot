@@ -26,6 +26,16 @@ namespace ParkingLot.Controllers
             return Ok(calculateFareInputDto);
         }
 
+        [HttpPost("exitVehicle")]
+        public async Task<IActionResult> ExitVehicle([FromBody] ExitVehicleInputDTO exitVehicleInputDto)
+        {
+            return Ok(exitVehicleInputDto);
+        }
 
+        [HttpPost("makePayment")]
+        public async Task<IActionResult> MakePayment([FromBody] PaymentInputDTO paymentInputDto)
+        {
+            return Ok(paymentInputDto);
+        }
     }
 }
